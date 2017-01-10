@@ -1,0 +1,255 @@
+* {
+  padding: 0px;
+  margin: 0px; }
+
+.container {
+  width: 1127px;
+  margin: auto; }
+
+@font-face {
+  font-family: 'MyriadProSemibold';
+  src: url(../fonts/myriadprosemibold.otf); }
+
+@font-face {
+  font-family: 'MyriadProRegular';
+  src: url(../fonts/MyriadProRegular.ttf); }
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/robotolight.ttf); }
+
+.heading {
+  margin-top: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 40px;
+  font-family: MyriadProSemibold;
+  font-weight: normal; }
+
+#banner {
+  width: 100%;
+  float: left;
+  background: #22675a;
+  padding: 32px 0px 37px 0px;
+  text-align: center; }
+  #banner h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 36px;
+    font-family: MyriadProSemibold;
+    font-weight: normal; }
+  #banner #video-iframe {
+    float: left;
+    margin-top: 27px;
+    width: 616px;
+    height: 415px;
+    background: black; }
+  #banner #form-dang-ky {
+    background: #1f5c51;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 27px;
+    width: 375px;
+    height: 379px;
+    padding: 18px 30px;
+    float: right;
+    text-align: left; }
+    #banner #form-dang-ky h4 {
+      font-family: MyriadProSemibold;
+      font-size: 22px;
+      color: #ff010d;
+      font-weight: normal;
+      text-transform: uppercase; }
+    #banner #form-dang-ky p {
+      margin-top: 4px;
+      font-family: MyriadProSemibold;
+      font-size: 14px;
+      color: #f9f5f5;
+      font-weight: normal;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #8faea8; }
+    #banner #form-dang-ky .form-group {
+      margin-top: 16px;
+      float: left; }
+      #banner #form-dang-ky .form-group label {
+        font-family: MyriadProSemibold;
+        font-size: 18px;
+        color: #ffffff;
+        float: left;
+        letter-spacing: 0.5px;
+        text-transform: uppercase; }
+      #banner #form-dang-ky .form-group input {
+        margin-top: 6px;
+        width: 354px;
+        height: 30px;
+        padding: 2.5px 10px;
+        float: left;
+        border-radius: 5px;
+        border: 0px; }
+      #banner #form-dang-ky .form-group a {
+        display: block;
+        width: 374px;
+        padding: 8.5px 0.5px 8px 0px;
+        text-align: center;
+        background: #e60000;
+        border: 0px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: MyriadProSemibold;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase; }
+        #banner #form-dang-ky .form-group a:hover {
+          background: #b30000; }
+
+.dang_ky_hoc {
+  margin-top: 70px;
+  float: left;
+  width: 100%;
+  text-align: center; }
+  .dang_ky_hoc a {
+    display: block;
+    margin: auto;
+    width: 364px;
+    padding: 11px 0px;
+    text-align: center;
+    font-family: MyriadProRegular;
+    font-size: 22px;
+    color: #ffffff;
+    background: #e60000;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+    font-weight: normal; }
+    .dang_ky_hoc a:hover {
+      background: #b30000; }
+
+#loi_ich {
+  float: left;
+  width: 100%;
+  padding: 0px 0px 60px 0px;
+  background: #ffffff; }
+  #loi_ich #loi_ich_left_ul {
+    margin-top: 22px;
+    width: 630px;
+    float: left; }
+    #loi_ich #loi_ich_left_ul li {
+      list-style: none;
+      margin-top: 43px;
+      width: 100%;
+      float: left; }
+  #loi_ich #loi_ich_right_ul {
+    width: 495px;
+    float: left;
+    margin-top: 22px; }
+    #loi_ich #loi_ich_right_ul li {
+      list-style: none;
+      margin-top: 43px;
+      width: 100%;
+      float: left; }
+  #loi_ich .loi_ich_img {
+    width: 80px;
+    height: 80px;
+    float: left; }
+  #loi_ich .loi_ich_info {
+  	padding-top:8px;
+    margin-left: 28px;
+    width: 370px;
+    float: left; }
+    #loi_ich .loi_ich_info a {
+      text-transform: uppercase;
+      font-family: MyriadProSemibold;
+      font-size: 22px;
+      font-weight: normal;
+      text-decoration: none;
+      color: #333333; }
+    #loi_ich .loi_ich_info p {
+      padding-top: 4px;
+      font-family: MyriadProRegular;
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: normal;
+      text-decoration: none;
+      color: #999999; }
+
+.cach_tham_gia {
+  padding: 0px 0px 90px 0px;
+  background: #f8f8f8;
+  width: 100%;
+  float: left; }
+  .cach_tham_gia ul {
+    margin-top: 65px;
+    float: left;
+    padding: 0px 60px; }
+    .cach_tham_gia ul a {
+      text-decoration: none; }
+    .cach_tham_gia ul li {
+      list-style: none;
+      width: 25%;
+      float: left;
+      text-align: center; }
+      .cach_tham_gia ul li .cach_tham_gia_img {
+        height: 104px;
+        text-align: center; }
+      .cach_tham_gia ul li h3 {
+        padding: 0px 4px;
+        margin-top: 6px;
+        line-height: 20px;
+        text-align: center;
+        font-family: MyriadProSemibold;
+        font-size: 18px;
+        color: #333333;
+        text-decoration: none; }
+
+#gia_su_noi_bat {
+  width: 100%;
+  float: left; }
+  #gia_su_noi_bat .gia_su_noi_bat_intros {
+    width: 100%;
+    float: left;
+    margin-top: 65px;
+    padding-bottom: 26px; }
+    #gia_su_noi_bat .gia_su_noi_bat_intros:last-child {
+      padding-bottom: 0px;
+      margin-top: 0px; }
+    #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro {
+      width: 20%;
+      float: left;
+      text-align: center; }
+      #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro a {
+        text-align: center;
+        font-family: RobotoLight;
+        font-size: 15.73px;
+        color: #333333;
+        text-decoration: none;
+        text-transform: capitalize; }
+        #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro a:hover {
+          color: #b3b3b3; }
+      #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro p {
+        padding-top: 8px;
+        font-family: RobotoLight;
+        font-size: 13px;
+        color: #999999; }
+      #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro ul {
+        width: 100%;
+        float: left;
+        margin-top: 7px;
+        text-align: center; }
+        #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro ul li {
+          text-align: center;
+          display: inline-block;
+          list-style: none; }
+
+.gia_su_noi_bat_intros-img {
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border: 0px;
+  margin-bottom: 14px; }
+  .gia_su_noi_bat_intros-img img {
+    border-radius: 50%; }
