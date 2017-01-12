@@ -275,6 +275,8 @@ header {
       text-align: center; }
       #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro:hover .gia_su_noi_bat_info {
         display: block; }
+        #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro:hover .gia_su_noi_bat_info_last {
+        display: block; }
       #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro a {
         text-align: center;
         font-family: RobotoLight;
@@ -309,11 +311,12 @@ header {
     border-radius: 50%; }
 
 .gia_su_noi_bat_info {
+  width: 250px;
   transition: all .4s;
   display: none;
   position: absolute;
-  right: -75%;
-  top: 0px;
+  right: -85%;
+  bottom: -60%;
   border: 1px solid navy;
   z-index: 1;
   opacity: 0.8;
@@ -370,6 +373,78 @@ header {
         height: 12px;
         margin-top: 5px; }
       .gia_su_noi_bat_info .gia_su_noi_bat_info_thanh_tich li span {
+        line-height: 20px;
+        font-family: RobotoLight;
+        font-size: 13px;
+        color: #333333;
+        text-transform: capitalize;
+        text-align: left;
+        margin-left: 10px;
+        font-weight: bold; }
+
+.gia_su_noi_bat_info_last {
+  width: 250px;
+  transition: all .4s;
+  display: none;
+  position: absolute;
+  left: -80%;
+  bottom: -100px;
+  border: 1px solid navy;
+  z-index: 1;
+  opacity: 0.8;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 5px; }
+  .gia_su_noi_bat_info_last .gia_su_noi_bat_info_name {
+    font-family: MyriadProSemibold;
+    font-size: 16px;
+    color: black;
+    text-transform: capitalize;
+    text-align: left; }
+  .gia_su_noi_bat_info_last .gia_su_noi_bat_info_title {
+    margin-top: 3px;
+    font-family: RobotoLight;
+    font-size: 13px;
+    color: black;
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: bold; }
+  .gia_su_noi_bat_info_last .gia_su_noi_bat_info_danh_gia_label {
+    line-height: 30px;
+    font-family: MyriadProSemibold;
+    font-size: 16px;
+    color: black;
+    text-transform: capitalize;
+    text-align: left; }
+  .gia_su_noi_bat_info_last .gia_su_noi_bat_info_danh_gia {
+    width: 100%;
+    float: left;
+    text-align: left; }
+    .gia_su_noi_bat_info_last .gia_su_noi_bat_info_danh_gia li {
+      text-align: left;
+      display: inline-block;
+      list-style: none; }
+  .gia_su_noi_bat_info_last .gia_su_noi_bat_info_thanh_tich_label {
+    line-height: 30px;
+    font-family: MyriadProSemibold;
+    font-size: 16px;
+    color: black;
+    text-transform: capitalize;
+    text-align: left; }
+  .gia_su_noi_bat_info_last .gia_su_noi_bat_info_thanh_tich {
+    width: 100%;
+    float: left;
+    text-align: left; }
+    .gia_su_noi_bat_info_last .gia_su_noi_bat_info_thanh_tich li {
+      text-align: left;
+      width: 100%;
+      float: left;
+      list-style: none; }
+      .gia_su_noi_bat_info_last .gia_su_noi_bat_info_thanh_tich li img {
+        width: 12px;
+        height: 12px;
+        margin-top: 5px; }
+      .gia_su_noi_bat_info_last .gia_su_noi_bat_info_thanh_tich li span {
         line-height: 20px;
         font-family: RobotoLight;
         font-size: 13px;
@@ -473,5 +548,7 @@ footer {
   footer #footer-right {
     width: 230px;
     float: right;
-    background: red;
     height: 120px; }
+footer #footer-right #like-facebook{
+  margin-top: 20px;
+}
