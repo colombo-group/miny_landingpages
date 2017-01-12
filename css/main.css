@@ -141,7 +141,7 @@ header {
         float: left;
         border-radius: 5px;
         border: 0px; }
-      #banner #form-dang-ky .form-group a {
+      #banner #form-dang-ky .form-group button {
         display: block;
         width: 374px;
         padding: 8.5px 0.5px 8px 0px;
@@ -320,7 +320,7 @@ header {
   top:55%;
     border: 1px solid #00A888;
   z-index: 1;
-  opacity: 0.8;
+  opacity: 0.9;
   padding: 10px;
   background: #ffffff;
   border-radius: 5px; }
@@ -388,11 +388,11 @@ header {
   transition: all .4s;
   display: none;
   position: absolute;
-  left: -80%;
+  left: -85%;
   top: 55%;
   border: 1px solid #00A888;
   z-index: 1;
-  opacity: 0.8;
+  opacity: 0.9;
   padding: 10px;
   background: #ffffff;
   border-radius: 5px; }
@@ -445,25 +445,24 @@ header {
         width: 12px;
         height: 12px;
         margin-top: 5px; }
-      .gia_su_noi_bat_info_last .gia_su_noi_bat_info_thanh_tich li span {
+       .gia_su_noi_bat_info-span {
         line-height: 20px;
         font-family: RobotoLight;
         font-size: 13px;
         color: #333333;
         text-transform: capitalize;
         text-align: left;
-        margin-left: 10px;
         font-weight: bold; }
 
 footer {
   width: 100%;
   float: left;
-  margin-top: 12px;
+  margin-top: 55px;
   padding: 56px 0px 72px 0px;
   background: #fafafa;
   border-top: 1px solid #ededed; }
   footer #footer-left {
-    width: 890px;
+    width: 880px;
     float: left;
     padding-left: 5px; }
     footer #footer-left #miny-logo {
@@ -491,7 +490,7 @@ footer {
           footer #footer-left #ul-one li a:hover {
             color: gray; }
     footer #footer-left #ul-two {
-      width: 180px;
+      width: 160px;
       float: left; }
       footer #footer-left #ul-two li {
         list-style: none;

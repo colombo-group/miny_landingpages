@@ -33,23 +33,23 @@
 				<iframe width="615" height="415" src="https://www.youtube.com/embed/JA6U9zpQoMI" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<div id="form-dang-ky">
-				<form action="#" method="get" accept-charset="utf-8">
+				<form action="dangKy.php" method="POST" accept-charset="utf-8">
 					<h4>đăng ký để nhận tư vấn miễn phí</h4>
 					<p>Điền thông tin để tư vấn viên liên hệ tư vấn gia sư phù hợp</p>
 					<div class="form-group">
 						<label for="ho_va_ten_input">họ và tên</label>
-						<input type="text" id='ho_va_ten_input' />
+						<input type="text" id='ho_va_ten_input' name= "hoTen" />
 					</div>	
 					<div class="form-group">
 						<label for="sdt_input">số điện thoại</label>
-						<input type="text" id='sdt_input' />
+						<input type="text" id='sdt_input' name="sdt" />
 					</div>	
 					<div class="form-group">
 						<label for="email_input">email</label>
-						<input type="email" id='email_input' />
+						<input type="email" id='email_input' name="email" />
 					</div>	
 					<div class="form-group">
-						<a href="#">đăng ký</a>
+						<button type="submit">đăng ký</button>
 					</div>					
 				</form>
 			</div>
@@ -167,7 +167,7 @@
 		<div class="gia_su_noi_bat_intros">
 			<div class="gia_su_noi_bat_intro">
 				<div class="gia_su_noi_bat_intros-img">
-					<img src="imgs/gia_su.jpg" alt="Thumb">
+					<a href="javascript:;" ><img src="imgs/gia_su.jpg" alt="Thumb"></a>
 				</div>
 				<a href="#">Nguyễn vũ mai anh</a>
 				<p class="gia_su_noi_bat_intro_title">Dạy tiếng anh</p>
@@ -186,7 +186,7 @@
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
-						<li><span>&#40;4&#47;5&#41;</span></li>
+						<li><span class="gia_su_noi_bat_info-span">&#40;4&#47;5&#41;</span></li>
 					</ul>
 					<p class="gia_su_noi_bat_info_thanh_tich_label">Thành tích</p>
 					<ul class="gia_su_noi_bat_info_thanh_tich">
@@ -198,7 +198,7 @@
 			</div>
 			<div class="gia_su_noi_bat_intro">
 				<div class="gia_su_noi_bat_intros-img">
-					<img src="imgs/gia_su.jpg" alt="Thumb">
+					<a href="javascript:;" ><img src="imgs/gia_su.jpg" alt="Thumb"></a>
 				</div>
 				<a href="#">Hồ Đăng Chung</a>
 				<p class="gia_su_noi_bat_intro_title">Dạy Toán - Hóa</p>
@@ -217,7 +217,7 @@
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
-						<li><span>&#40;4&#47;5&#41;</span></li>
+						<li><span class="gia_su_noi_bat_info-span">&#40;4&#47;5&#41;</span></li>
 					</ul>
 					<p class="gia_su_noi_bat_info_thanh_tich_label">Thành tích</p>
 					<ul class="gia_su_noi_bat_info_thanh_tich">
@@ -229,7 +229,8 @@
 
 			<div class="gia_su_noi_bat_intro">
 				<div class="gia_su_noi_bat_intros-img">
-					<img src="imgs/gia_su.jpg" alt="Thumb">
+					<a href="javascript:;" ><img src="imgs/gia_su.jpg" alt="Thumb"></a>
+					
 				</div>
 				<a href="#">Võ Thị Thanh</a>
 				<p class="gia_su_noi_bat_intro_title">Dạy  Toán - Hóa - Sinh</p>
@@ -248,7 +249,7 @@
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
-						<li><span>&#40;4&#47;5&#41;</span></li>
+						<li><span class="gia_su_noi_bat_info-span">&#40;4&#47;5&#41;</span></li>
 					</ul>
 					<p class="gia_su_noi_bat_info_thanh_tich_label">Thành tích</p>
 					<ul class="gia_su_noi_bat_info_thanh_tich">
@@ -260,7 +261,8 @@
 
 			<div class="gia_su_noi_bat_intro">
 				<div class="gia_su_noi_bat_intros-img">
-					<img src="imgs/gia_su.jpg" alt="Thumb">
+					<a href="javascript:;" ><img src="imgs/gia_su.jpg" alt="Thumb"></a>
+					
 				</div>
 				<a href="#">Vương Minh Thùy</a>
 				<p class="gia_su_noi_bat_intro_title">Dạy tiếng anh</p>
@@ -279,7 +281,7 @@
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
-						<li><span>&#40;4&#47;5&#41;</span></li>
+						<li><span class="gia_su_noi_bat_info-span">&#40;4&#47;5&#41;</span></li>
 					</ul>
 					<p class="gia_su_noi_bat_info_thanh_tich_label">Thành tích</p>
 					<ul class="gia_su_noi_bat_info_thanh_tich">
@@ -291,7 +293,8 @@
 
 			<div class="gia_su_noi_bat_intro">
 				<div class="gia_su_noi_bat_intros-img">
-					<img src="imgs/gia_su.jpg" alt="Thumb">
+					<a href="javascript:;" ><img src="imgs/gia_su.jpg" alt="Thumb"></a>
+					
 				</div>
 				<a href="#">Vũ Thị Hạnh </a>
 				<p class="gia_su_noi_bat_intro_title">Dạy Toán - Lý - Hóa</p>
@@ -310,7 +313,7 @@
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
-						<li><span>&#40;4&#47;5&#41;</span></li>
+						<li><span class="gia_su_noi_bat_info-span">&#40;4&#47;5&#41;</span></li>
 					</ul>
 					<p class="gia_su_noi_bat_info_thanh_tich_label">Thành tích</p>
 					<ul class="gia_su_noi_bat_info_thanh_tich">
@@ -324,7 +327,8 @@
 
 			<div class="gia_su_noi_bat_intro">
 				<div class="gia_su_noi_bat_intros-img">
-					<img src="imgs/gia_su.jpg" alt="Thumb">
+					<a href="javascript:;" ><img src="imgs/gia_su.jpg" alt="Thumb"></a>
+					
 				</div>
 				<a href="#">Nguyễn Thị Phương Hà </a>
 				<p class="gia_su_noi_bat_intro_title">Dạy tiếng anh</p>
@@ -343,7 +347,7 @@
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
-						<li><span>&#40;4&#47;5&#41;</span></li>
+						<li><span class="gia_su_noi_bat_info-span">&#40;4&#47;5&#41;</span></li>
 					</ul>
 					<p class="gia_su_noi_bat_info_thanh_tich_label">Thành tích</p>
 					<ul class="gia_su_noi_bat_info_thanh_tich">
@@ -356,7 +360,8 @@
 			</div>
 			<div class="gia_su_noi_bat_intro">
 				<div class="gia_su_noi_bat_intros-img">
-					<img src="imgs/gia_su.jpg" alt="Thumb">
+					<a href="javascript:;" ><img src="imgs/gia_su.jpg" alt="Thumb"></a>
+					
 				</div>
 				<a href="#">Nguyễn Thị Quỳnh Mai</a>
 				<p class="gia_su_noi_bat_intro_title">Dạy Toán - Lý - Anh </p>
@@ -375,7 +380,7 @@
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
-						<li><span>&#40;4&#47;5&#41;</span></li>
+						<li><span class="gia_su_noi_bat_info-span">&#40;4&#47;5&#41;</span></li>
 					</ul>
 					<p class="gia_su_noi_bat_info_thanh_tich_label">Thành tích</p>
 					<ul class="gia_su_noi_bat_info_thanh_tich">
@@ -388,7 +393,8 @@
 
 			<div class="gia_su_noi_bat_intro">
 				<div class="gia_su_noi_bat_intros-img">
-					<img src="imgs/gia_su.jpg" alt="Thumb">
+					<a href="javascript:;" ><img src="imgs/gia_su.jpg" alt="Thumb"></a>
+					
 				</div>
 				<a href="#">Nguyễn Thị Minh Nguyệt </a>
 				<p class="gia_su_noi_bat_intro_title">Dạy tiếng anh</p>
@@ -407,7 +413,7 @@
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
-						<li><span>&#40;4&#47;5&#41;</span></li>
+						<li><span class="gia_su_noi_bat_info-span">&#40;4&#47;5&#41;</span></li>
 					</ul>
 					<p class="gia_su_noi_bat_info_thanh_tich_label">Thành tích</p>
 					<ul class="gia_su_noi_bat_info_thanh_tich">
@@ -420,7 +426,8 @@
 
 			<div class="gia_su_noi_bat_intro">
 				<div class="gia_su_noi_bat_intros-img">
-					<img src="imgs/gia_su.jpg" alt="Thumb">
+					<a href="javascript:;" ><img src="imgs/gia_su.jpg" alt="Thumb"></a>
+					
 				</div>
 				<a href="#">Đỗ Trung Hiếu</a>
 				<p class="gia_su_noi_bat_intro_title">Dạy Toán - Hóa</p>
@@ -439,7 +446,7 @@
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
-						<li><span>&#40;4&#47;5&#41;</span></li>
+						<li><span class="gia_su_noi_bat_info-span">&#40;4&#47;5&#41;</span></li>
 					</ul>
 					<p class="gia_su_noi_bat_info_thanh_tich_label">Thành tích</p>
 					<ul class="gia_su_noi_bat_info_thanh_tich">
@@ -450,7 +457,8 @@
 
 			<div class="gia_su_noi_bat_intro">
 				<div class="gia_su_noi_bat_intros-img">
-					<img src="imgs/gia_su.jpg" alt="Thumb">
+					<a href="javascript:;" ><img src="imgs/gia_su.jpg" alt="Thumb"></a>
+					
 				</div>
 				<a href="#">Lương Anh Phương</a>
 				<p class="gia_su_noi_bat_intro_title">Dạy tiếng anh</p>
@@ -469,7 +477,7 @@
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
 						<li><img src="imgs/star.png" alt="Sao"></li>
-						<li><span>&#40;4&#47;5&#41;</span></li>
+						<li><span class="gia_su_noi_bat_info-span">&#40;4&#47;5&#41;</span></li>
 					</ul>
 					<p class="gia_su_noi_bat_info_thanh_tich_label">Thành tích</p>
 					<ul class="gia_su_noi_bat_info_thanh_tich">
