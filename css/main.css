@@ -1,3 +1,52 @@
+header {
+  width: 100%;
+  float: left;
+  background: #ffffff;
+  padding: 6px 0px 5px 0px; }
+  header #logo {
+    width: 96px;
+    padding-left: 5px;
+    float: left; }
+    header #logo img {
+      width: 100%; }
+  header #header-option {
+    width: 404px;
+    float: right; }
+    header #header-option form {
+      float: left; }
+      header #header-option form input {
+        position: relative;
+        width: 190px;
+        transition: all .4s;
+        display: block;
+        padding: 7px 12px 7px 30px;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #7088a9;
+        background-color: #e8ecf3;
+        border: 2px solid transparent;
+        border-radius: 3px;
+        -webkit-transition: border-color .15s, background .15s;
+        -o-transition: border-color .15s, background .15s;
+        transition: border-color .15s, background .15s;
+        -webkit-appearance: none; }
+      header #header-option form img {
+        position: absolute;
+        right: 488px;
+        top: 18px; }
+    header #header-option a {
+      padding-top: 10px;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+      font-family: RobotoRegular;
+      color: #8a9eb8;
+      font-weight: normal;
+      display: block;
+      float: left; }
+      header #header-option a:hover {
+        color: #9BDDD0; }
+
 * {
   padding: 0px;
   margin: 0px; }
@@ -12,11 +61,15 @@
 
 @font-face {
   font-family: 'MyriadProRegular';
-  src: url(../fonts/MyriadProRegular.ttf); }
+  src: url(../fonts/myriadproregular.otf); }
 
 @font-face {
   font-family: 'RobotoLight';
   src: url(../fonts/robotolight.ttf); }
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url(../fonts/RobotoRegular.ttf); }
 
 .heading {
   margin-top: 55px;
@@ -157,11 +210,11 @@
     height: 80px;
     float: left; }
   #loi_ich .loi_ich_info {
-  	padding-top:8px;
     margin-left: 28px;
     width: 370px;
     float: left; }
     #loi_ich .loi_ich_info a {
+      padding-top: 14px;
       text-transform: uppercase;
       font-family: MyriadProSemibold;
       font-size: 22px;
@@ -169,10 +222,9 @@
       text-decoration: none;
       color: #333333; }
     #loi_ich .loi_ich_info p {
-      padding-top: 4px;
+      padding-top: 14px;
       font-family: MyriadProRegular;
-      font-size: 20px;
-      line-height: 22px;
+      font-size: 22px;
       font-weight: normal;
       text-decoration: none;
       color: #999999; }
@@ -199,11 +251,10 @@
       .cach_tham_gia ul li h3 {
         padding: 0px 4px;
         margin-top: 6px;
-        line-height: 20px;
         text-align: center;
         font-family: MyriadProSemibold;
         font-size: 18px;
-        color: #333333;
+        color: #959595;
         text-decoration: none; }
 
 #gia_su_noi_bat {
@@ -219,28 +270,31 @@
       margin-top: 0px; }
     #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro {
       width: 20%;
+      position: relative;
       float: left;
       text-align: center; }
+      #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro:hover .gia_su_noi_bat_info {
+        display: block; }
       #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro a {
         text-align: center;
         font-family: RobotoLight;
         font-size: 15.73px;
-        color: #333333;
+        color: #666666;
         text-decoration: none;
         text-transform: capitalize; }
         #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro a:hover {
           color: #b3b3b3; }
-      #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro p {
+      #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro .gia_su_noi_bat_intro_title {
         padding-top: 8px;
         font-family: RobotoLight;
         font-size: 13px;
         color: #999999; }
-      #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro ul {
+      #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro .gia_su_noi_bat_intro_ul {
         width: 100%;
         float: left;
         margin-top: 7px;
         text-align: center; }
-        #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro ul li {
+        #gia_su_noi_bat .gia_su_noi_bat_intros .gia_su_noi_bat_intro .gia_su_noi_bat_intro_ul li {
           text-align: center;
           display: inline-block;
           list-style: none; }
@@ -253,3 +307,171 @@
   margin-bottom: 14px; }
   .gia_su_noi_bat_intros-img img {
     border-radius: 50%; }
+
+.gia_su_noi_bat_info {
+  transition: all .4s;
+  display: none;
+  position: absolute;
+  right: -75%;
+  top: 0px;
+  border: 1px solid navy;
+  z-index: 1;
+  opacity: 0.8;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 5px; }
+  .gia_su_noi_bat_info .gia_su_noi_bat_info_name {
+    font-family: MyriadProSemibold;
+    font-size: 16px;
+    color: black;
+    text-transform: capitalize;
+    text-align: left; }
+  .gia_su_noi_bat_info .gia_su_noi_bat_info_title {
+    margin-top: 3px;
+    font-family: RobotoLight;
+    font-size: 13px;
+    color: black;
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: bold; }
+  .gia_su_noi_bat_info .gia_su_noi_bat_info_danh_gia_label {
+    line-height: 30px;
+    font-family: MyriadProSemibold;
+    font-size: 16px;
+    color: black;
+    text-transform: capitalize;
+    text-align: left; }
+  .gia_su_noi_bat_info .gia_su_noi_bat_info_danh_gia {
+    width: 100%;
+    float: left;
+    text-align: left; }
+    .gia_su_noi_bat_info .gia_su_noi_bat_info_danh_gia li {
+      text-align: left;
+      display: inline-block;
+      list-style: none; }
+  .gia_su_noi_bat_info .gia_su_noi_bat_info_thanh_tich_label {
+    line-height: 30px;
+    font-family: MyriadProSemibold;
+    font-size: 16px;
+    color: black;
+    text-transform: capitalize;
+    text-align: left; }
+  .gia_su_noi_bat_info .gia_su_noi_bat_info_thanh_tich {
+    width: 100%;
+    float: left;
+    text-align: left; }
+    .gia_su_noi_bat_info .gia_su_noi_bat_info_thanh_tich li {
+      text-align: left;
+      width: 100%;
+      float: left;
+      list-style: none; }
+      .gia_su_noi_bat_info .gia_su_noi_bat_info_thanh_tich li img {
+        width: 12px;
+        height: 12px;
+        margin-top: 5px; }
+      .gia_su_noi_bat_info .gia_su_noi_bat_info_thanh_tich li span {
+        line-height: 20px;
+        font-family: RobotoLight;
+        font-size: 13px;
+        color: #333333;
+        text-transform: capitalize;
+        text-align: left;
+        margin-left: 10px;
+        font-weight: bold; }
+
+footer {
+  width: 100%;
+  float: left;
+  margin-top: 12px;
+  padding: 56px 0px 72px 0px;
+  background: #fafafa;
+  border-top: 1px solid #ededed; }
+  footer #footer-left {
+    width: 890px;
+    float: left;
+    padding-left: 5px; }
+    footer #footer-left #miny-logo {
+      width: 165px;
+      padding-left: 5px;
+      float: left; }
+      footer #footer-left #miny-logo img {
+        width: 100%; }
+    footer #footer-left #ul-one {
+      width: 290px;
+      float: left;
+      margin-left: 30px; }
+      footer #footer-left #ul-one li {
+        list-style: none;
+        text-align: left;
+        margin-bottom: 19px;
+        width: 90%;
+        float: left; }
+        footer #footer-left #ul-one li a {
+          font-family: RobotoLight;
+          font-size: 13px;
+          text-decoration: none;
+          color: #333333;
+          font-weight: bold; }
+          footer #footer-left #ul-one li a:hover {
+            color: gray; }
+    footer #footer-left #ul-two {
+      width: 180px;
+      float: left; }
+      footer #footer-left #ul-two li {
+        list-style: none;
+        margin-bottom: 15px;
+        width: 90%;
+        float: left; }
+        footer #footer-left #ul-two li img {
+          width: 5px;
+          margin-top: 6px;
+          float: left; }
+        footer #footer-left #ul-two li a {
+          margin-left: 10px;
+          font-family: RobotoLight;
+          font-size: 13px;
+          text-decoration: none;
+          color: #333333;
+          font-weight: bold; }
+          footer #footer-left #ul-two li a:hover {
+            color: gray; }
+    footer #footer-left #ul-three {
+      width: 180px;
+      float: left; }
+      footer #footer-left #ul-three li {
+        list-style: none;
+        margin-bottom: 15px;
+        width: 90%;
+        float: left; }
+        footer #footer-left #ul-three li img {
+          width: 5px;
+          margin-top: 6px;
+          float: left; }
+        footer #footer-left #ul-three li a {
+          margin-left: 10px;
+          font-family: RobotoLight;
+          font-size: 13px;
+          text-decoration: none;
+          color: #333333;
+          font-weight: bold; }
+          footer #footer-left #ul-three li a:hover {
+            color: gray; }
+    footer #footer-left #copy {
+      margin-top: 55px;
+      border-top: 1px solid #dddddd;
+      padding-top: 19px;
+      width: 100%;
+      float: left; }
+      footer #footer-left #copy p {
+        width: 90%;
+        float: left;
+        font-family: RobotoLight;
+        font-size: 12px;
+        text-decoration: none;
+        color: #333333;
+        line-height: 20px; }
+  footer #footer-right {
+    width: 230px;
+    float: right;
+    background: red;
+    height: 120px; }
