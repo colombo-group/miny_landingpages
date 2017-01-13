@@ -141,6 +141,10 @@ header {
         float: left;
         border-radius: 5px;
         border: 0px; }
+      #banner #form-dang-ky .form-group a{
+        display: block;
+        text-decoration: none;
+      }
       #banner #form-dang-ky .form-group button {
         display: block;
         width: 374px;
@@ -309,6 +313,8 @@ header {
   border: 0px;
   margin-bottom: 14px; }
   .gia_su_noi_bat_intros-img img {
+    width:120px;
+    height: 120px;
     border-radius: 50%; }
 
 .gia_su_noi_bat_info {
