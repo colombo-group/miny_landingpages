@@ -478,7 +478,7 @@ footer {
       footer #footer-left #miny-logo img {
         width: 100%; }
     footer #footer-left #ul-one {
-      width: 290px;
+      width: 250px;
       float: left;
       margin-left: 30px; }
       footer #footer-left #ul-one li {
@@ -496,7 +496,7 @@ footer {
           footer #footer-left #ul-one li a:hover {
             color: gray; }
     footer #footer-left #ul-two {
-      width: 160px;
+      width: 250px;
       float: left; }
       footer #footer-left #ul-two li {
         list-style: none;
