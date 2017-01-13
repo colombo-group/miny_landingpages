@@ -13,7 +13,8 @@ header {
     width: 404px;
     float: right; }
     header #header-option form {
-      float: left; }
+      float: left;
+      position: relative;}
       header #header-option form input {
         position: relative;
         width: 190px;
@@ -32,8 +33,8 @@ header {
         -webkit-appearance: none; }
       header #header-option form img {
         position: absolute;
-        right: 488px;
-        top: 18px; }
+        left: 10px;
+        top: 12px; }
     header #header-option a {
       padding-top: 10px;
       text-decoration: none;
@@ -82,6 +83,7 @@ header {
 
 #banner {
   width: 100%;
+  min-width: 1127px;
   float: left;
   background: #22675a;
   padding: 32px 0px 37px 0px;
@@ -100,6 +102,7 @@ header {
     height: 415px;
     background: black; }
   #banner #form-dang-ky {
+    cursor: pointer;
     background: #1f5c51;
     border: 0px;
     border-radius: 10px;
@@ -238,6 +241,7 @@ header {
   padding: 0px 0px 90px 0px;
   background: #f8f8f8;
   width: 100%;
+  min-width: 1127px;
   float: left; }
   .cach_tham_gia ul {
     margin-top: 65px;
@@ -390,78 +394,13 @@ header {
         font-weight: bold; }
 
 .gia_su_noi_bat_info_last {
-  width: 250px;
-  transition: all .4s;
-  display: none;
-  position: absolute;
   left: -85%;
   top: 55%;
-  border: 1px solid #00A888;
-  z-index: 1;
-  opacity: 0.9;
-  padding: 10px;
-  background: #ffffff;
-  border-radius: 5px; }
-  .gia_su_noi_bat_info_last .gia_su_noi_bat_info_name {
-    font-family: MyriadProSemibold;
-    font-size: 16px;
-    color: black;
-    text-transform: capitalize;
-    text-align: left; }
-  .gia_su_noi_bat_info_last .gia_su_noi_bat_info_title {
-    margin-top: 3px;
-    font-family: RobotoLight;
-    font-size: 13px;
-    color: black;
-    text-transform: capitalize;
-    text-align: left;
-    font-weight: bold; }
-  .gia_su_noi_bat_info_last .gia_su_noi_bat_info_danh_gia_label {
-    line-height: 30px;
-    font-family: MyriadProSemibold;
-    font-size: 16px;
-    color: black;
-    text-transform: capitalize;
-    text-align: left; }
-  .gia_su_noi_bat_info_last .gia_su_noi_bat_info_danh_gia {
-    width: 100%;
-    float: left;
-    text-align: left; }
-    .gia_su_noi_bat_info_last .gia_su_noi_bat_info_danh_gia li {
-      text-align: left;
-      display: inline-block;
-      list-style: none; }
-  .gia_su_noi_bat_info_last .gia_su_noi_bat_info_thanh_tich_label {
-    line-height: 30px;
-    font-family: MyriadProSemibold;
-    font-size: 16px;
-    color: black;
-    text-transform: capitalize;
-    text-align: left; }
-  .gia_su_noi_bat_info_last .gia_su_noi_bat_info_thanh_tich {
-    width: 100%;
-    float: left;
-    text-align: left; }
-    .gia_su_noi_bat_info_last .gia_su_noi_bat_info_thanh_tich li {
-      text-align: left;
-      width: 100%;
-      float: left;
-      list-style: none; }
-      .gia_su_noi_bat_info_last .gia_su_noi_bat_info_thanh_tich li img {
-        width: 12px;
-        height: 12px;
-        margin-top: 5px; }
-       .gia_su_noi_bat_info-span {
-        line-height: 20px;
-        font-family: RobotoLight;
-        font-size: 13px;
-        color: #333333;
-        text-transform: capitalize;
-        text-align: left;
-        font-weight: bold; }
+}
 
 footer {
   width: 100%;
+  min-width: 1127px;
   float: left;
   margin-top: 55px;
   padding: 56px 0px 72px 0px;
