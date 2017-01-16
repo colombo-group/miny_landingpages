@@ -4,6 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Miny-giới thiệu</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript">
+		function goto(link){
+            var win = window.open(link, '_blank');
+            if (win) {
+                //Browser has allowed it to be opened
+                win.focus();
+            } else {
+                //Browser has blocked it
+                window.location = link;
+            }
+		}
+	</script>
 </head>
 <body>
 <script>
@@ -42,7 +54,7 @@
 			<div id="video-iframe">
 				<iframe width="615" height="415" src="https://www.youtube.com/embed/JA6U9zpQoMI" frameborder="0" allowfullscreen></iframe>
 			</div>
-			<div id="form-dang-ky" onclick="window.location = 'https://docs.google.com/forms/d/e/1FAIpQLSeINn_UTBcmQKGRQWCoz3iNGGSU44SUwfWxnSyJmTRuECeGuw/viewform';">
+			<div id="form-dang-ky" onclick="goto('https://docs.google.com/forms/d/e/1FAIpQLSeINn_UTBcmQKGRQWCoz3iNGGSU44SUwfWxnSyJmTRuECeGuw/viewform');">
 				<form action="dangKy.php" method="POST" accept-charset="utf-8">
 					<h4>đăng ký để nhận tư vấn miễn phí</h4>
 					<p>Điền thông tin để tư vấn viên liên hệ tư vấn gia sư phù hợp</p>
@@ -135,7 +147,7 @@
 				</li>
 			</ul>
 			<div class="dang_ky_hoc">
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeINn_UTBcmQKGRQWCoz3iNGGSU44SUwfWxnSyJmTRuECeGuw/viewform">đăng ký tư vấn miễn phí</a>
+				<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeINn_UTBcmQKGRQWCoz3iNGGSU44SUwfWxnSyJmTRuECeGuw/viewform">đăng ký tư vấn miễn phí</a>
 			</div>
 		</div>
 	</div>
@@ -496,7 +508,7 @@
 </div>
 <!-- End gia_su_noi_bat -->
 <div class="dang_ky_hoc">
-	<a href="https://docs.google.com/forms/d/e/1FAIpQLSeINn_UTBcmQKGRQWCoz3iNGGSU44SUwfWxnSyJmTRuECeGuw/viewform">đăng ký tư vấn miễn phí</a>
+	<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeINn_UTBcmQKGRQWCoz3iNGGSU44SUwfWxnSyJmTRuECeGuw/viewform">đăng ký tư vấn miễn phí</a>
 </div>
 <!-- End dang_ky_hoc -->
 
